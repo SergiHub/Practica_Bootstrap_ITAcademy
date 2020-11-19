@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontello.css"> <!-- Download icons from the fontello page -->
+	<link rel="stylesheet" href="css/main.css"> <!-- Our own styles -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> <!-- Google Fonts -->
+	<title>Practica E-commerce</title>
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<header>
+
+		<!-- Drop-down Menu Part -->
+		<div class="bg-dark collapse" id="navbarHeader">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-sm-8 py-4">
+						<h4 class="text-white">Qui som</h4>
+						<p class="text-muted">Som una llibreria amb més de 100 anys d'història. La més antiga del
+							Pblenou i de les tres més antigues de Barcelona. Varies generacions ens hem dedicat a vendre
+							llibres amb la il·lusió del primer dia i sempre amb un somriure a la boca i un llibre a la
+							mà</p>
+					</div>
+					<div class="col-12 col-sm-4 py-4">
+						<h4 class="text-white">Contacte'ns</h4>
+						<ul class="list-unstyled">
+							<li>
+								<span class="text-white">Segueix-nos a Twitter</span>
+								<a href="https://twitter.com/?lang=es" target="_blank"
+									class="social-media-icons icon-twitter twitter"></a>
+							</li>
+							<li>
+								<span class="text-white">Troba'ns al Facebook</span>
+								<a href="https://es-es.facebook.com/" target="_blank"
+									class="social-media-icons icon-facebook facebook"></a>
+							</li>
+							<li>
+								<span class="text-white">Mira'ns a Instagram</span>
+								<a href="https://www.instagram.com/?hl=es" target="_blank"
+									class="social-media-icons icon-instagram instagram"></a>
+							</li>
+							<li>
+								<span class="text-white">Envia'ns un correu</span>
+								<a href="#" class="icon-mail-1 mail"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Options -->
+		<div class="container-fluid bg-dark">
+			<div class="row">
+				<!-- Compressed Menú (with 3 lines) -->
+				<div class="col-3 p-0 order-1">
+					<div class="navbar navbar-dark bg-dark">
+						<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+							data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+							aria-label="Alternar Navegació">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+				</div>
+				<!-- Company Logo and Name -->
+				<div class="col-12 col-sm-6 d-flex justify-content-center align-items-center p-0 order-3 order-sm-2 mt-3 mt-sm-0">
+					<img src="img/logo.jpg" alt="">
+					<strong class="pl-3 text-white">La meva llibreria</strong>
+				</div>
+				<!-- Login / Sign in (made with Modal effect) -->
+				<div class="col-9 col-sm-3 d-flex justify-content-end align-items-center order-2 order-sm-3">
+
+					<!-- Login -->
+					<div>
+						<button class="btn btn-seconadry" data-toggle="modal" data-target="#fm-modal">Loga't</button>
+						<div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="">Accés al teu compte</h5>
+										<button class="close" data-dismiss="modal" aria-label="Tancar">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group row">
+												<label for="" class="col-sm-3 col-form-label">Email</label>
+												<div class="col-sm-9">
+													<input type="email" class="form-control" id="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="" class="col-sm-3 col-form-label">Contrasenya</label>
+												<div class="col-sm-9">
+													<input type="password" class="form-control" id="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<div class="col d-flex justify-content-between align-items-center">
+													<a href=""><small class="text-muted">Has oblidat la
+															contrasenya?</small></a>
+													<button type="submit" class="btn btn-dark ml-auto">Entra</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Sing in -->
+					<div>
+						<button class="btn btn-seconadry ml-3" data-toggle="modal"
+							data-target="#fm-modal2">Registra't</button>
+						<div class="modal fade" id="fm-modal2" tabindex="-1" role="dialog" aria-labelledby="fm-modal2"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="">Nou usuari</h5>
+										<button class="close" data-dismiss="modal" aria-label="Tancar">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group row">
+												<label for="" class="col-sm-3 col-form-label">Nom</label>
+												<div class="col-sm-9">
+													<input type="text" class="form-control" id="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="" class="col-sm-3 col-form-label">Email</label>
+												<div class="col-sm-9">
+													<input type="email" class="form-control" id="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="" class="col-sm-3 col-form-label">Contrasenya</label>
+												<div class="col-sm-9">
+													<input type="password" class="form-control" id="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="" class="col-sm-3 col-form-label">Repetir
+													Contrasenya</label>
+												<div class="col-sm-9">
+													<input type="password" class="form-control" id="">
+												</div>
+											</div>
+											<div class="form-group row">
+												<div class="col d-flex justify-content-between align-items-center">
+													<button type="submit"
+														class="btn btn-dark ml-auto">Registrar-me</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Search Bar -->
+			<div class="row mt-3">
+				<div class="col">
+					<form action="">
+						<label class="sr-only" for="inlineFormInputGroup"></label>
+						<div class="input-group mb-2">
+							<input type="text" class="form-control" id="inlineFormInputGroup"
+								placeholder="Busca per autor, títol, gènere, ISBN">
+							<div class="input-group-append">
+								<div class="input-group-text btn"><i class="icon-search"></i></div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		
+			<!-- Filters Menu -->
+			<div class="row pt-3 pb-4 bg-dark">
+				<div class="col">
+					<nav class="d-flex flexr-nowrap justify-content-start bg-dark">
+						<a href="index.html" class="text-white pr-5">Inici</a>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Llibres</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<h6 class="dropdown-header">Categories</h6>
+								<a class="dropdown-item" href="#">Biografies</a>
+								<a class="dropdown-item" href="#">Història</a>
+								<a class="dropdown-item" href="#">Narrativa</a>
+								<a class="dropdown-item" href="#">Infantil i Juvenil</a>
+								<a class="dropdown-item" href="#">Viatges i mapes</a>
+								<a class="dropdown-item" href="#">Esports</a>
+								<a class="dropdown-item" href="#">Cuina</a>
+								<a class="dropdown-item" href="#">Cinema</a>
+								<a class="dropdown-item" href="#">Música</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton2"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Papereria</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+								<h6 class="dropdown-header">Explorar</h6>
+								<a class="dropdown-item" href="#">Home</a>
+								<a class="dropdown-item" href="#">Altres</a>
+								<div class="dropdown-divider"></div>
+								<h6 class="dropdown-header">Materials</h6>
+								<a class="dropdown-item" href="#">Arxiu i organització</a>
+								<a class="dropdown-item" href="#">Material escolar</a>
+								<a class="dropdown-item" href="#">Màquines d'oficina</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton3"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electrònica</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+								<a class="dropdown-item" href="#">e-readers</a>
+								<a class="dropdown-item" href="#">Fundes</a>
+								<a class="dropdown-item" href="#">Mòbils</a>
+								<a class="dropdown-item" href="#">Tabletes</a>
+								<a class="dropdown-item" href="#">Accessoris</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton4"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jocs</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+								<a class="dropdown-item" href="#">Construccions</a>
+								<a class="dropdown-item" href="#">Manualitats</a>
+								<a class="dropdown-item" href="#">Educatius</a>
+								<a class="dropdown-item" href="#">Jocs de cartes</a>
+								<a class="dropdown-item" href="#">Jocs de lògica</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<!-- MAIN -->
+	<main class="container">
+		<div class="row">
+			<div class="col my-5">
+
+				<!-- Detail of the selected book -->
+				<div class="row">
+					<div class="col-12 col-lg-3">
+						<img src="img/si-ens-ensenyen.jpeg" class="img-fluid" alt="">
+					</div>
+					<div class="col-12 col-md-8 col-lg-6 mt-3 mt-lg-0">
+						<h4>Si ens ensenyessin a perdre, guanyaríem sempre</h4>
+						<p class="text-secondary">Espinoas, Albert</p>
+						<div class="row">
+							<div class="col-6">
+								<p class="m-0"><strong>Nº ref.:</strong></p>
+								<p class="m-0"><strong>Editorial:</strong></p>
+								<p class="m-0"><strong>Any d'edició:</strong></p>
+								<p class="m-0"><strong>Categoria:</strong></p>
+								<p class="m-0"><strong>Pàgines:</strong></p>
+								<p class="m-0"><strong>Encuadernació:</strong></p>
+								<p class="m-0"><strong>Idioma:</strong></p>
+								<p class="m-0"><strong>Disponibilitat:</strong></p>
+							</div>
+							<div class="col-6">
+								<p class="m-0">001</p>
+								<p class="m-0">Rosa dels vents</p>
+								<p class="m-0">2020</p>
+								<p class="m-0">Narrativa</p>
+								<p class="m-0">240</p>
+								<p class="m-0">Tapa dura</p>
+								<p class="m-0">Català</p>
+								<p class="m-0">Si (lliuramente en 2-4 dies)</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3 mt-3 mt-lg-0">
+						<div class="card bg-light">
+							<div class="card-body text-center">
+								<ul class="my-3 list-unstyled">
+									<li class="d-flex justify-content-between align-items-center">
+										<span>Descompte</span>
+										<span class="badge badge-success badge-pill">5%</span>
+									</li>
+									<li class="d-flex justify-content-between align-items-center">
+										<span>Abans</span>
+										<span><del>18,90 €</del></span>
+									</li>
+									<li class="d-flex justify-content-between align-items-center">
+										<span>Ara</span>
+										<span class="font-weight-bold">16,50 €</span>
+									</li>
+									<li class="d-flex justify-content-end">
+										<span>IVA inclòs</span>
+									</li>
+								</ul>
+								<button class="btn btn-dark btn-block">Comprar</button>
+							</div>
+						</div>
+						<div>
+							<button class="btn btn-outline-dark btn-block mt-2">Afegir a favorits</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Other Books section -->
+				<h3 class="p-3 m-4 font-italic border-bottom">Altres llibres de l'autor en stock</h3>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3">
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<img src="img/espinosa-1.jpg" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li class="mt-2"><strong>SI TÚ ME DICES VEN LO DEJO TODO, PERO DIME VEN</strong></li>
+							<li class="text-secondary mt-2">Espinosa, Albert</li>
+							<li class="text-info mt-2">Ref. 001-2</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<img src="img/espinosa-2.jpg" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li class="mt-2"><strong>EL QUE ET DIRÉ QUAN ET TORNI A VEURE</strong></li>
+							<li class="text-secondary mt-2">Espinosa, Albert</li>
+							<li class="text-info mt-2">Ref. 001-3</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<img src="img/espinosa-3.jpg" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li class="mt-2"><strong>EL MILLOR D'ANAR ÉS TORNAR</strong></li>
+							<li class="text-secondary mt-2">Espinosa, Albert</li>
+							<li class="text-info mt-2">Ref. 001-4</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3">
+						<ul class="list-unstyled">
+							<li>
+								<a href="#">
+									<img src="img/espinosa-4.jpg" class="img-fluid" alt="">
+								</a>
+							</li>
+							<li class="mt-2"><strong>EL MÓN GROC</strong></li>
+							<li class="text-secondary mt-2">Espinosa, Albert</li>
+							<li class="text-info mt-2">Ref. 001-4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="container py-4 border-top">
+		<div class="row">
+			<div class="col-12 col-md-6 mb-3 mb-md-0">
+				<h5><strong>La meva llibreria</strong></h5>
+				<small>Carrer Bilbao, 30. Baixos. 08005 Barcelona</small>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1701.0643082411702!2d2.2029154251348007!3d41.40278821283391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a340638b08d5%3A0x2f2c707cc63269b0!2sCarrer%20de%20Bilbao%2C%2030%2C%2008005%20Barcelona!5e0!3m2!1ses!2ses!4v1605602726742!5m2!1ses!2ses"
+					width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+					tabindex="0" class="mt-2">
+				</iframe>
+			</div>
+			<div class="col-6 col-md-3 mt-5 pt-5 mt-md-0 pt-md-0">
+				<h5>Serveis</h5>
+				<ul class="list-unstyled text-small">
+					<li><a href="#" class="text-muted">Treballa amb nosaltres</a></li>
+					<li><a href="#" class="text-muted">Informació per editorials</a></li>
+					<li><a href="#" class="text-muted">Recollida de llibres</a></li>
+					<li><a href="#" class="text-muted">adipisicing elit</a></li>
+					<li><a href="#" class="text-muted">Autopublicació</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md-3 mt-5 pt-5 mt-md-0 pt-md-0">
+				<h5>Informació legal</h5>
+				<ul class="list-unstyled text-small">
+					<li><a href="#" class="text-muted">Avís Legal</a></li>
+					<li><a href="#" class="text-muted">Condicions de venda</a></li>
+					<li><a href="#" class="text-muted">Política de privacitat</a></li>
+					<li><a href="#" class="text-muted">Política de Cookies</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
