@@ -17,67 +17,48 @@
 	<!-- HEADER -->
 	<header>
 
-		<!-- Drop-down Menu Part -->
-		<div class="bg-dark collapse" id="navbarHeader">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 col-sm-8 py-4">
-						<h4 class="text-white">Qui som</h4>
-						<p class="text-muted">Som una llibreria amb més de 100 anys d'història. La més antiga del
-							Pblenou i de les tres més antigues de Barcelona. Varies generacions ens hem dedicat a vendre
-							llibres amb la il·lusió del primer dia i sempre amb un somriure a la boca i un llibre a la
-							mà</p>
-					</div>
-					<div class="col-12 col-sm-4 py-4">
-						<h4 class="text-white">Contacte'ns</h4>
-						<ul class="list-unstyled">
-							<li>
-								<span class="text-white">Segueix-nos a Twitter</span> 
-								<a href="https://twitter.com/?lang=es" target="_blank" class="social-media-icons icon-twitter twitter"></a>
-							</li>
-							<li>
-								<span class="text-white">Troba'ns al Facebook</span> 
-								<a href="https://es-es.facebook.com/" target="_blank" class="social-media-icons icon-facebook facebook"></a>
-							</li>
-							<li>
-								<span class="text-white">Mira'ns a Instagram</span> 
-								<a href="https://www.instagram.com/?hl=es" target="_blank" class="social-media-icons icon-instagram instagram"></a>
-							</li>
-							<li>
-								<span class="text-white">Envia'ns un correu</span> 
-								<a href="#" class="icon-mail-1 mail"></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<!-- Header Options -->
 		<div class="container-fluid bg-dark">
-			<div class="row">
-				<!-- Compressed Menú (with 3 lines) -->
-				<div class="col-3 p-0 order-1">
-					<div class="navbar navbar-dark bg-dark">
-						<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-							data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
-							aria-label="Alternar Navegació">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+			<div class="row pt-2">
+
+				<!-- About us -->
+				<div class="col-3 p-0 order-1 d-flex align-items-center pl-3">
+					<a href="" class="text-white" data-toggle="modal" data-target="#about-modal">Qui som</a>
+					<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-modal"
+						aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="">Qui som</h5>
+									<button class="close" data-dismiss="modal" aria-label="Tancar">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<p class="text-muted">Som una llibreria amb més de 100 anys d'història. La més
+										antiga del Poblenou i de les tres més antigues de Barcelona. Varies generacions
+										ens hem dedicat a vendre llibres amb la il·lusió del primer dia i sempre amb un
+										somriure a la boca i un llibre a la mà.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+
 				<!-- Company Logo and Name -->
-				<div class="col-12 col-sm-6 d-flex justify-content-center align-items-center p-0 order-3 order-sm-2 mt-3 mt-sm-0">
-					<img src="img/logo.jpg" alt="">
+				<div
+					class="col-12 col-sm-6 d-flex justify-content-center align-items-center p-0 order-3 order-sm-2 mt-3 mt-sm-0">
+					<img src="img/logo.png" alt="">
 					<strong class="pl-3 text-white">La meva llibreria</strong>
 				</div>
+
 				<!-- Login / Sign in (made with Modal effect) -->
 				<div class="col-9 col-sm-3 d-flex justify-content-end align-items-center order-2 order-sm-3">
 
 					<!-- Login -->
 					<div>
-						<button class="btn btn-seconadry" data-toggle="modal" data-target="#fm-modal">Loga't</button>
-						<div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal"
+						<button class="btn btn-seconadry" data-toggle="modal" data-target="#login-modal">Loga't</button>
+						<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal"
 							aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-content">
@@ -118,8 +99,8 @@
 					<!-- Sing in -->
 					<div>
 						<button class="btn btn-seconadry ml-3" data-toggle="modal"
-							data-target="#fm-modal2">Registra't</button>
-						<div class="modal fade" id="fm-modal2" tabindex="-1" role="dialog" aria-labelledby="fm-modal2"
+							data-target="#singin-modal">Registra't</button>
+						<div class="modal fade" id="singin-modal" tabindex="-1" role="dialog" aria-labelledby="singin-modal"
 							aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-content">
@@ -186,13 +167,90 @@
 					</form>
 				</div>
 			</div>
-		
+
 			<!-- Filters Menu -->
 			<div class="row pt-3 pb-4 bg-dark">
 				<div class="col">
-					<nav class="d-flex flexr-nowrap justify-content-start bg-dark">
-						<a href="#" class="text-white pr-5">Inici</a>
-						<div class="dropdown">
+
+					<!-- Menu for all devices except mobile -->
+					<nav class="d-none d-sm-block">
+						<div class="d-flex flex-nowrap justify-content-start bg-dark">
+							<a href="#" class="text-white pr-5">Inici</a>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Llibres</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<h6 class="dropdown-header">Categories</h6>
+									<a class="dropdown-item" href="#">Biografies</a>
+									<a class="dropdown-item" href="#">Història</a>
+									<a class="dropdown-item" href="#">Narrativa</a>
+									<a class="dropdown-item" href="#">Infantil i Juvenil</a>
+									<a class="dropdown-item" href="#">Viatges i mapes</a>
+									<a class="dropdown-item" href="#">Esports</a>
+									<a class="dropdown-item" href="#">Cuina</a>
+									<a class="dropdown-item" href="#">Cinema</a>
+									<a class="dropdown-item" href="#">Música</a>
+								</div>
+							</div>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton2"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Papereria</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+									<h6 class="dropdown-header">Explorar</h6>
+									<a class="dropdown-item" href="#">Home</a>
+									<a class="dropdown-item" href="#">Altres</a>
+									<div class="dropdown-divider"></div>
+									<h6 class="dropdown-header">Materials</h6>
+									<a class="dropdown-item" href="#">Arxiu i organització</a>
+									<a class="dropdown-item" href="#">Material escolar</a>
+									<a class="dropdown-item" href="#">Màquines d'oficina</a>
+								</div>
+							</div>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton3"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electrònica</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+									<a class="dropdown-item" href="#">e-readers</a>
+									<a class="dropdown-item" href="#">Fundes</a>
+									<a class="dropdown-item" href="#">Mòbils</a>
+									<a class="dropdown-item" href="#">Tabletes</a>
+									<a class="dropdown-item" href="#">Accessoris</a>
+								</div>
+							</div>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton4"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jocs</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+									<a class="dropdown-item" href="#">Construccions</a>
+									<a class="dropdown-item" href="#">Manualitats</a>
+									<a class="dropdown-item" href="#">Educatius</a>
+									<a class="dropdown-item" href="#">Jocs de cartes</a>
+									<a class="dropdown-item" href="#">Jocs de lògica</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+
+					<!-- Compressed Menu -with 3 lines- (for mobile) -->
+					<nav class="navbar navbar-dark bg-dark d-sm-none">
+						<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+							data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+							aria-label="Alternar Navegació">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Drop-down Menu Part -->
+		<div class="bg-dark collapse" id="navbarHeader">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 d-flex flex-column">
+						<a href="#" class="text-white">Inici</a>
+						<div class="dropright mt-2">
 							<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Llibres</a>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -208,7 +266,7 @@
 								<a class="dropdown-item" href="#">Música</a>
 							</div>
 						</div>
-						<div class="dropdown">
+						<div class="dropright mt-2">
 							<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton2"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Papereria</a>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
@@ -222,7 +280,7 @@
 								<a class="dropdown-item" href="#">Màquines d'oficina</a>
 							</div>
 						</div>
-						<div class="dropdown">
+						<div class="dropright mt-2">
 							<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton3"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electrònica</a>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
@@ -233,7 +291,7 @@
 								<a class="dropdown-item" href="#">Accessoris</a>
 							</div>
 						</div>
-						<div class="dropdown">
+						<div class="dropright my-2">
 							<a href="#" class="dropdown-toggle text-white pr-5" id="dropdownMenuButton4"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jocs</a>
 							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
@@ -244,7 +302,7 @@
 								<a class="dropdown-item" href="#">Jocs de lògica</a>
 							</div>
 						</div>
-					</nav>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -344,7 +402,7 @@
 						<ul class="list-unstyled">
 							<li>
 								<a href="#">
-									<img src="img/dolca-intro.jpeg" class="img-fluid" alt="">
+									<img src="img/dolca-intro.png" class="img-fluid" alt="">
 								</a>
 							</li>
 							<li class="mt-2"><strong>DOLÇA INTRUCCIÓ AL CAOS</strong></li>
@@ -370,7 +428,7 @@
 						<ul class="list-unstyled">
 							<li>
 								<a href="#">
-									<img src="img/fil-invisible.jpeg" class="img-fluid" alt="">
+									<img src="img/fil-invisible.png" class="img-fluid" alt="">
 								</a>
 							</li>
 							<li class="mt-2"><strong>EL FIL INVISIBLE</strong></li>
@@ -465,24 +523,54 @@
 					tabindex="0" class="mt-2">
 				</iframe>
 			</div>
-			<div class="col-6 col-md-3 mt-5 pt-5 mt-md-0 pt-md-0">
-				<h5>Serveis</h5>
-				<ul class="list-unstyled text-small">
-					<li><a href="#" class="text-muted">Treballa amb nosaltres</a></li>
-					<li><a href="#" class="text-muted">Informació per editorials</a></li>
-					<li><a href="#" class="text-muted">Recollida de llibres</a></li>
-					<li><a href="#" class="text-muted">adipisicing elit</a></li>
-					<li><a href="#" class="text-muted">Autopublicació</a></li>
-				</ul>
-			</div>
-			<div class="col-6 col-md-3 mt-5 pt-5 mt-md-0 pt-md-0">
-				<h5>Informació legal</h5>
-				<ul class="list-unstyled text-small">
-					<li><a href="#" class="text-muted">Avís Legal</a></li>
-					<li><a href="#" class="text-muted">Condicions de venda</a></li>
-					<li><a href="#" class="text-muted">Política de privacitat</a></li>
-					<li><a href="#" class="text-muted">Política de Cookies</a></li>
-				</ul>
+			<div class="col-12 col-md-6 mt-5 pt-5 mt-md-0 pt-md-0">
+				<div class="row">
+					<div class="col-6">
+						<h5>Serveis</h5>
+						<ul class="list-unstyled text-small">
+							<li><a href="#" class="text-muted">Treballa amb nosaltres</a></li>
+							<li><a href="#" class="text-muted">Informació per editorials</a></li>
+							<li><a href="#" class="text-muted">Recollida de llibres</a></li>
+							<li><a href="#" class="text-muted">adipisicing elit</a></li>
+							<li><a href="#" class="text-muted">Autopublicació</a></li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<h5>Informació legal</h5>
+						<ul class="list-unstyled text-small">
+							<li><a href="#" class="text-muted">Avís Legal</a></li>
+							<li><a href="#" class="text-muted">Condicions de venda</a></li>
+							<li><a href="#" class="text-muted">Política de privacitat</a></li>
+							<li><a href="#" class="text-muted">Política de Cookies</a></li>
+						</ul>
+					</div>
+					<div class="col-12">
+						<div class="col-8 offset-2 mt-4">
+							<h5>Contacte'ns</h5>
+							<div class="d-flex flex-column">
+								<div class="d-flex justify-content-between">
+									<span class="text-muted">Segueix-nos a Twitter</span>
+									<a href="https://twitter.com/?lang=es" target="_blank"
+										class="social-media-icons icon-twitter twitter"></a>
+								</div>
+								<div class="d-flex justify-content-between">
+									<span class="text-muted">Troba'ns al Facebook</span>
+									<a href="https://es-es.facebook.com/" target="_blank"
+										class="social-media-icons icon-facebook facebook"></a>
+								</div>
+								<div class="d-flex justify-content-between">
+									<span class="text-muted">Mira'ns a Instagram</span>
+									<a href="https://www.instagram.com/?hl=es" target="_blank"
+										class="social-media-icons icon-instagram instagram"></a>
+								</div>
+								<div class="d-flex justify-content-between">
+									<span class="text-muted">Envia'ns un correu</span>
+									<a href="#" class="icon-mail-1 mail"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
